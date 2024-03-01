@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+/* --------------RETIRAR SETAS DE MAIS E MENOS DOS ELEMENTOS INPUT --*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ------------------FIM DA RETIRADA DE SETAS ------------------*/
+body {
+    background-image: url(images/bg-main-desktop.png);
+    height: 100vh;
+}
+
+.painelbranco {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    margin-left: 30%;
+    justify-content: center;
+    position: relative;
+}
+
+form {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.confirm {
+    background-color: hsl(278, 68%, 11%);
+    padding: 10px 145px 10px 145px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(278, 68%, 11%);
+    margin-bottom: 5px;
+}
+
+.nomeenumero {
+    padding: 5px 0px 5px 5px;
+    width: 330px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    font-size: 15px;
+    margin-bottom: 20px;
+
+
+}
+
+.meseano {
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    font-size: 15px;
+    width: 55px;
+}
+
+.codigo {
+    margin-left: 10px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    font-size: 15px;
+    width: 200px;
+}
+
+.cartoes {
+    margin-top: 145px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.cartoesback {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    margin-top: 415px;
+    margin-left: 200px;
+}
+
+.logo {
+    position: absolute;
+    padding: 20px;
+}
+
+.numerocartao {
+    display: flex;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+    color: hsl(270, 3%, 87%);
+    width: 400px;
+    font-size: 30px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.nomecartao {
+    position: absolute;
+    padding: 20px;
+    margin-left: 20px;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+}
+
+.validadecartao {
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    margin-right: 35px;
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(270, 3%, 87%);
+}
+
+.codigodeverificacao {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 370px;
+    color: hsl(270, 3%, 87%);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.178);
+}
+
+.certo {
+    background-color: rgba(0, 128, 0, 0.439);
+}
+
+.painelbranco2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    margin-left: 30%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.imagemfinal {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.obrigadofinal {
+    margin-bottom: 10px;
+}
+
+.detalhesfinal {
+    font-size: 16px;
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 30px;
+}
+
+.botaofinal {
+    color: hsl(270, 3%, 87%);
+    background-color: hsl(278, 68%, 11%);
+    /* width: 200px; */
+    padding: 15px 130px 15px 130px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.desaparece {
+    display: none;
+}

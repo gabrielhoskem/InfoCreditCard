@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+  <div class="cartoes">
+    <img src="images/bg-card-front.png">
+    <img class="logo" src="images/card-logo.svg">
+
+    <p class="numerocartao">0000 0000 0000 0000</p>
+    <p class="nomecartao">Jane Appleseed</p>
+    <p class="validadecartao">00/00</p>
+  </div>
+  <div class="cartoesback">
+    <img src="images/bg-card-back.png">
+    <p class="codigodeverificacao">000</p>
+  </div>
+  <!------------------------ PAINEL BRANCO ----->
+  <div class="painelbranco">
+    <form>
+      <p>CARDHOLDER NAME</p>
+      <input class="nomeenumero nome" type="text" placeholder="e.g. Jane Appleseed">
+      <p>CARD NUMBER</p>
+      <input class="nomeenumero numero" type="number" placeholder="e.g. 1234 5678 9123 0000">
+      <p>EXP. DATE (MM/YY)
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CVC</p>
+      <input class="meseano mes" type="month" placeholder="MM">
+      <input class="meseano ano" type="number" placeholder="YY">
+      <input class="codigo" type="number" placeholder="e.g. 123"><br>
+      <button class="confirm">Confirm</button>
+    </form>
+  </div>
+  <!-------------------------- FIM DO PAINEL BRANCO -->
+  <!-- Completed state start -->
+
+  <div class="painelbranco2 desaparece">
+    <img class="imagemfinal" src="images/icon-complete.svg">
+    <h2 class="obrigadofinal">THANK YOU!</h2>
+    <p class="detalhesfinal">We've added your card details</p>
+    <button class="botaofinal">Continue</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
